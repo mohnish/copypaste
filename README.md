@@ -1,4 +1,4 @@
-# CopyPaste
+# Copypaste
 
 A very minimalistic online notepad tool to quickly write & share information.
 
