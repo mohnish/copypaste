@@ -1,0 +1,23 @@
+common: &common
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 5
+  username: root
+  password:
+  host: '127.0.0.1'
+
+development:
+  <<: *common
+  database: anonynote_development
+
+test:
+  <<: *common
+  database: anonynote_test
+
+production:
+  database: anonynote_production
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  password:
